@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Promise For You ❤️</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #333;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 80%;
+            margin: auto;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        }
+        button {
+            padding: 12px 25px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .yes { background-color: #ff6b81; color: white; }
+        .no { background-color: #ccc; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>For Someone Very Special ❤️</h1>
+
+    <h2>My Promise</h2>
+    <p>
+        I promise that I will always be your friend, no matter what happens.
+        I will always be there with you in your lows and your highs.
+        I will always cheer for you, support you, and stand beside you.
+    </p>
+
+    <h2>A Small Question For You</h2>
+    <p>
+        Do you have free time between <b>8:00 PM and 9:00 PM</b> for a dinner date with me?
+    </p>
+
+    <button class="yes" onclick="answerYes()">Yes ❤️</button>
+    <button class="no" onclick="answerNo()">Maybe Later</button>
+
+    <p id="response"></p>
+</div>
+
+<script>
+function answerYes() {
+    document.getElementById("response").innerHTML = "Yay! I’ll be waiting for our dinner date 😊";
+}
+
+function answerNo() {
+    document.getElementById("response").innerHTML = "No worries, we’ll plan another beautiful time together ❤️";
+}
+</script>
+
+</body>
+</html>
