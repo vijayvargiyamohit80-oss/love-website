@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Promise For You ❤️</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #ff9a9e, #fad0c4);
+        text-align: center;
+        padding: 40px;
+    }
+
+    .card {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        max-width: 600px;
+        margin: auto;
+        box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+    }
+
+    h1 { color: #ff4d6d; }
+
+    img {
+        width: 260px;
+        border-radius: 15px;
+        margin-top: 15px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    }
+
+    button {
+        padding: 12px 25px;
+        margin: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .yes { background-color: #ff6b81; color: white; }
+    .no { background-color: #ccc; }
+
+    #response {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #333;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>For Someone Very Special ❤️</h1>
+
+<h2>My Promise</h2>
+<p>
+I promise that I will always be your friend, no matter what happens.
+I will always be there for you in your lows and your highs.
+I will always cheer for you, support you, and stand beside you.
+</p>
+
+<h2>Your Smile</h2>
+<img src="smile.jpg" alt="Her Beautiful Smile">
+
+<h2>A Small Question</h2>
+<p>
+If you want to smile like this again, will you come with me on a dinner date
+between <b>8:00 PM and 9:00 PM</b>?
+</p>
+
+<button class="yes" onclick="answerYes()">Yes ❤️</button>
+<button class="no" onclick="answerNo()">Maybe Later</button>
+
+<p id="response"></p>
+
+</div>
+
+<script>
+function answerYes() {
+    document.getElementById("response").innerHTML =
+    "That makes me really happy 😊 I’ll be waiting for our dinner date.";
+}
+
+function answerNo() {
+    document.getElementById("response").innerHTML =
+    "No worries at all. We will plan another beautiful time together ❤️";
+}
+</script>
+
+</body>
+</html>
